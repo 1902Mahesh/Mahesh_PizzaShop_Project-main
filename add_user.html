@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Add User</title>
+  </head>
+  <body>
+    <!-- Navbar Upper Starts -->
+    <nav class="navbar navbar-expand-lg upper_navbar p-0">
+      <div class="container-fluid p-0">
+        <div class="bg-white d-flex flex-row">
+          <!-- Hamburger -->
+          <button
+            class="btn d-block d-lg-none"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="./images/icons/hamburger.svg" alt="" width="30px" />
+          </button>
+
+          <!-- Pizzashop Logo -->
+          <a
+            href=""
+            class="d-flex align-items-center text-decoration-none ms-3"
+          >
+            <img
+              src="./images/logos/pizzashop_logo.png"
+              alt=""
+              width="70px"
+              style="margin-right: 13px"
+            />
+            <span
+              class="sidebar_desc d-none d-md-block fw-bold"
+              style="padding-right: 60px"
+              >PIZZASHOP</span
+            >
+          </a>
+        </div>
+        <!-- User Profile Image -->
+        <img
+          src="./images/Default_pfp.svg.png"
+          class="p-2"
+          alt=""
+          width="50px"
+        />
+      </div>
+    </nav>
+    <!-- Navbar Upper Ends -->
+
+    <div class="main_body d-flex">
+      <!-- Left Navigation Panel Starts-->
+      <nav
+        class="d-none d-lg-block sidebar d-flex flex-column align-items-center"
+      >
+        <ul>
+          <li>
+            <a href="./user_list.html">
+              <img src="./images/icons/border-all.svg" alt="" />
+              <span class="sidebar_desc">Dashboard</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./user_list.html">
+              <img src="./images/icons/people.svg" alt="" />
+              <span class="sidebar_desc">Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="./permissions.html">
+              <img src="./images/icons/person-gear.svg" alt="" />
+              <span class="sidebar_desc">Roles and Permisions</span>
+            </a>
+          </li>
+          <li>
+            <a href="./menu.html">
+              <img src="./images/icons/menu-icon.png" alt="" />
+              <span class="sidebar_desc">Menu</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/square-fill.svg" alt="" />
+              <span class="sidebar_desc">Table and Section</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/cash-coin.svg" alt="" />
+              <span class="sidebar_desc">Taxes and Fees</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/clipboard-check.svg" alt="" />
+              <span class="sidebar_desc">Order</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/person-rolodex.svg" alt="" />
+              <span class="sidebar_desc">Customers</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Left Navigation Panel Ends -->
+
+      <!-- OffCanvas SideBar Starts -->
+      <div
+        class="offcanvas offcanvas-start w-auto"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-body">
+          <nav class="sidebar d-flex flex-column">
+            <div class="offcanvas-header p-0">
+              <a
+                href=""
+                class="d-flex align-items-center text-decoration-none ms-3"
+              >
+                <img src="./images/logos/pizzashop_logo.png" alt="" />
+                <span class="sidebar_desc fw-bold">PIZZASHOP</span>
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <ul>
+              <li>
+                <a href="./user_list.html">
+                  <img src="./images/icons/border-all.svg" alt="" />
+                  <span class="sidebar_desc">Dashboard</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="./user_list.html">
+                  <img src="./images/icons/people.svg" alt="" />
+                  <span class="sidebar_desc">Users</span>
+                </a>
+              </li>
+              <li>
+                <a href="./permissions.html">
+                  <img src="./images/icons/person-gear.svg" alt="" />
+                  <span class="sidebar_desc">Roles and Permisions</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/customer.svg" alt="" />
+                  <span class="sidebar_desc">Menu</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/square-fill.svg" alt="" />
+                  <span class="sidebar_desc">Table and Section</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/cash-coin.svg" alt="" />
+                  <span class="sidebar_desc">Taxes and Fees</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/clipboard-check.svg" alt="" />
+                  <span class="sidebar_desc">Order</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/person-rolodex.svg" alt="" />
+                  <span class="sidebar_desc">Customers</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Offcanvas Sidebar Ends -->
+
+      <!-- Main Body -->
+
+      <div class="body_content">
+        <!-- Edit User Starts-->
+        <div class="d-flex flex-row justify-content-between user_list_header">
+          <!-- Edit User Header -->
+          <div class="user_header fs-2 fs-lg-1">
+            <span>Add New User</span>
+          </div>
+          <!-- Back Button -->
+          <a
+            href="./user_list.html"
+            class="btn back_btn d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/icons/chevron-left.svg" alt="" />
+            Back
+          </a>
+        </div>
+
+        <!-- Edit User Form Starting -->
+        <div class="form_container">
+          <form action="">
+            <div class="row">
+              <div class="form-floating col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="John"
+                />
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-floating col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Doe"
+                />
+                <label for="lastName">Last Name</label>
+              </div>
+              <div class="form-floating col-md-6 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  placeholder="john123"
+                />
+                <label for="username">User Name</label>
+              </div>
+              <div class="form-floating col-md-6 mb-3">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="role"
+                >
+                  <option selected>Select Role</option>
+                  <option value="Account">Account</option>
+                  <option value="Admin">Admin</option>
+                  <option value="Cheff">Cheff</option>
+                </select>
+                <label for="role">Role</label>
+              </div>
+              <div class="form-floating col-md-6 mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="john123@gmail.com"
+                />
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating col-md-6 mb-3 position-relative">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="password"
+                />
+                <img
+                  src="./images/icons/eye-close.svg"
+                  alt=""
+                  width="22px"
+                  style="position: absolute; top: 17px; right: 24px"
+                />
+                <label for="password">Password</label>
+              </div>
+              <div
+                class="browse_file col-12 mb-3 d-flex justify-content-center"
+              >
+                <input type="file" id="file" class="" />
+                <label
+                  for="file"
+                  class="browse_file_label d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img
+                    src="./images/icons/cloud-arrow-up.svg"
+                    alt=""
+                    width="20px"
+                  />
+                  <p class="m-0">Browse File</p>
+                </label>
+              </div>
+              <div class="form-floating col-md-6 col-lg-4 mb-3">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="country"
+                >
+                  <option selected>Select Country</option>
+                  <option value="Account">India</option>
+                  <option value="Admin">USA</option>
+                  <option value="Cheff">Australia</option>
+                </select>
+                <label for="country">Country</label>
+              </div>
+              <div class="form-floating col-md-6 col-lg-4 mb-3">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="state"
+                >
+                  <option selected>Select State</option>
+                  <option value="Account">Gujarat</option>
+                  <option value="Admin">Rajasthan</option>
+                  <option value="Cheff">UP</option>
+                </select>
+                <label for="state">State</label>
+              </div>
+              <div class="form-floating col-md-6 col-lg-4 mb-3">
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="city"
+                >
+                  <option selected>Select City</option>
+                  <option value="Account">Dwarka</option>
+                  <option value="Admin">Ahmedabad</option>
+                  <option value="Cheff">Jamnagar</option>
+                </select>
+                <label for="city">City</label>
+              </div>
+              <div class="form-floating col-md-6 col-lg-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="zipcode"
+                  placeholder=""
+                />
+                <label for="zipcode">Zipcode</label>
+              </div>
+              <div class="form-floating col-md-6 col-lg-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder=""
+                />
+                <label for="address">Address</label>
+              </div>
+              <div class="form-floating col-md-6 col-lg-4 mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="9879898798"
+                />
+                <label for="phone">Phone</label>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <button class="btn create_user_btn">Create User</button>
+            <button class="btn cancle_btn">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

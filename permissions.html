@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Permissions</title>
+  </head>
+  <body>
+    <!-- Navbar Upper Starts -->
+    <nav class="navbar navbar-expand-lg upper_navbar p-0">
+      <div class="container-fluid p-0">
+        <div class="bg-white d-flex flex-row">
+          <!-- Hamburger -->
+          <button
+            class="btn d-block d-lg-none"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="./images/icons/hamburger.svg" alt="" width="30px" />
+          </button>
+
+          <!-- Pizzashop Logo -->
+          <a
+            href=""
+            class="d-flex align-items-center text-decoration-none ms-3"
+          >
+            <img
+              src="./images/logos/pizzashop_logo.png"
+              alt=""
+              width="70px"
+              style="margin-right: 13px"
+            />
+            <span
+              class="sidebar_desc d-none d-md-block fw-bold"
+              style="padding-right: 60px"
+              >PIZZASHOP</span
+            >
+          </a>
+        </div>
+        <!-- User Profile Image -->
+        <img
+          src="./images/Default_pfp.svg.png"
+          class="p-2"
+          alt=""
+          width="50px"
+        />
+      </div>
+    </nav>
+
+    <!-- Navbar Upper Ends -->
+
+    <div class="main_body d-flex">
+      <!-- Sidebar starts -->
+      <nav
+        class="d-none d-lg-block sidebar d-flex flex-column align-items-center"
+      >
+        <ul>
+          <li>
+            <a href="./user_list.html">
+              <img src="./images/icons/border-all.svg" alt="" />
+              <span class="sidebar_desc">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="./user_list.html">
+              <img src="./images/icons/people.svg" alt="" />
+              <span class="sidebar_desc">Users</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./permissions.html">
+              <img src="./images/icons/person-gear.svg" alt="" />
+              <span class="sidebar_desc">Roles and Permisions</span>
+            </a>
+          </li>
+          <li>
+            <a href="./menu.html">
+              <img src="./images/icons/menu-icon.png" alt="" />
+              <span class="sidebar_desc">Menu</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/square-fill.svg" alt="" />
+              <span class="sidebar_desc">Table and Section</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/cash-coin.svg" alt="" />
+              <span class="sidebar_desc">Taxes and Fees</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/clipboard-check.svg" alt="" />
+              <span class="sidebar_desc">Order</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/icons/person-rolodex.svg" alt="" />
+              <span class="sidebar_desc">Customers</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sidebar Ends -->
+
+      <!-- Offcanvas Starts -->
+      <div
+        class="offcanvas offcanvas-start w-auto"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-body">
+          <nav class="sidebar d-flex flex-column">
+            <div class="offcanvas-header p-0">
+              <a
+                href=""
+                class="d-flex align-items-center text-decoration-none ms-3"
+              >
+                <img src="./images/logos/pizzashop_logo.png" alt="" />
+                <span class="sidebar_desc fw-bold">PIZZASHOP</span>
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <ul>
+              <li>
+                <a href="./user_list.html">
+                  <img src="./images/icons/border-all.svg" alt="" />
+                  <span class="sidebar_desc">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="./user_list.html">
+                  <img src="./images/icons/people.svg" alt="" />
+                  <span class="sidebar_desc">Users</span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="./permissions.html">
+                  <img src="./images/icons/person-gear.svg" alt="" />
+                  <span class="sidebar_desc">Roles and Permisions</span>
+                </a>
+              </li>
+              <li>
+                <a href="./menu.html">
+                  <img src="./images/icons/menu-icon.png" alt="" />
+                  <span class="sidebar_desc">Menu</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/square-fill.svg" alt="" />
+                  <span class="sidebar_desc">Table and Section</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/cash-coin.svg" alt="" />
+                  <span class="sidebar_desc">Taxes and Fees</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/clipboard-check.svg" alt="" />
+                  <span class="sidebar_desc">Order</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/icons/person-rolodex.svg" alt="" />
+                  <span class="sidebar_desc">Customers</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- Offcanvas Ends -->
+
+      <!-- Main Body -->
+
+      <div class="body_content">
+        <!-- Permissions Starts-->
+        <div class="d-flex flex-row justify-content-between user_list_header">
+          <!-- Permissions User Header -->
+          <div class="user_header fs-2 fs-lg-1">
+            <span>Permissions</span>
+          </div>
+          <!-- Back Button -->
+          <a
+            href="./user_list.html"
+            class="btn back_btn d-flex align-items-center justify-content-center"
+          >
+            <img src="./images/icons/chevron-left.svg" alt="" />
+            Back
+          </a>
+        </div>
+
+        <div class="table_container table-responsive">
+          <!-- Input Field to manage user role -->
+
+          <div class="form-floating mb-3 role_selected">
+            <input
+              type="text"
+              class="form-control"
+              id="role"
+              placeholder=""
+              value="AccountManager"
+              disabled
+            />
+            <label for="role">Email address</label>
+          </div>
+
+          <!-- Table Starts -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="selectAll"
+                      onclick="toggleCheckBoxes(this)"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Permisions</label
+                    >
+                  </div>
+                </th>
+                <th scope="col">Can View</th>
+                <th scope="col">Can Add/Edit</th>
+                <th scope="col">Can Dedete</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <!-- 1st row  -->
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Users</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 2nd row -->
+              <tr>
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >RoleAndPermission</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 3rd Row -->
+              <tr>
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Menu</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 4th row -->
+              <tr>
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >TableAndSection</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <!-- 5th row -->
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >TaxAndFee</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <!-- 6th row -->
+              <tr>
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Order</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <!-- 7th Row -->
+              <tr>
+                <td>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input row-checkbox"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Customers</label
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Buttons -->
+          <div class="d-flex justify-content-end">
+            <button class="btn create_user_btn me-3">Save</button>
+            <button class="btn cancle_btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/custom.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
